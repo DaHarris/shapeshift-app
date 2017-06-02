@@ -1,13 +1,19 @@
-import { createStore } from 'redux';
-import rootReducer from '../reducers';
-import DevTools from '../containers/DevTools';
+import { applyMiddleware, createStore } from 'redux'
+import rootReducer from '../reducers'
 
-export default function configureStore(initialState) {
-    const store = createStore(
-        rootReducer,
-        initialState,
-        DevTools.instrument()
-    );
+const createLogger = require('redux-logger')
+const middlewares = []
+const loggerMiddleware = createLogger({
+  predicate: (getState, action) => !/^redux-form\//.test(action.type)
+})
+middlewares.push(loggerMiddleware)
 
-    return store;
+export default function configureStore (initialState) {
+  const store = createStore(
+    rootReducer,
+    initialState,
+    applyMiddleware(...middlewares)
+  )
+
+  return store
 }
