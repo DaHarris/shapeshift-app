@@ -19,7 +19,7 @@ I used a template to get React/Redux with Webpack running quickly and then simpl
 ## Dependencies
 * MongoDB
 * Redis
-* RabbitMQ with Policy: {name: schedule, Pattern: internal.scheduleQ, ApplyTo: queues, Definition: dead-letter-exchange: all-commands, Priority: 3}
+* RabbitMQ with Policy: `{name: schedule, Pattern: internal.scheduleQ, ApplyTo: queues, Definition: dead-letter-exchange: all-commands, Priority: 3}`
 
 ## Services Setup
 1. ```git clone git@github.com:DaHarris/shapeshift-exchange-management-api.git```
