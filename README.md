@@ -35,7 +35,7 @@ I used a template to get React/Redux with Webpack running quickly and then simpl
 You must start each service with: `npm run start` (they share a common config library linked by NODE_ENV vars accessed in the start script)
 
 ## FrontEnd Web App Setup
-1. ```git@github.com:DaHarris/shapeshift-app.git```
+1. ```git clone git@github.com:DaHarris/shapeshift-app.git```
 2. ```npm install```
 3. ```npm run start```
 4. Visit localhost:9000
