@@ -1,10 +1,19 @@
 import React from 'react'
+import ExchangeTable from './ExchangeTable'
+import LowestRates from './LowestRates'
+import HistoricalPricing from './HistoricalPricing'
 
 export default (ownProps) => {
   return (
     <div id='root-layout'>
-      <h1>Bitcoin Exchange Rates</h1>
       {ownProps.children}
+      <LowestRates />
+      <br />
+      <br />
+      <ExchangeTable />
+      <br />
+      <br />
+      <HistoricalPricing />
     </div>
   )
 }
