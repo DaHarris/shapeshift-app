@@ -16,29 +16,31 @@ I used a template to get React/Redux with Webpack running quickly and then simpl
 
 # System Setup
 
+---
+
 ## Dependencies
-0. ```MongoDB```
-0. ```Redis```
-0. ```RabbitMQ with Policy: {name: schedule, Pattern: internal.scheduleQ, ApplyTo: queues, Definition: dead-letter-exchange: all-commands, Priority: 3}```
+..* MongoDB
+..* Redis
+..* RabbitMQ with Policy: {name: schedule, Pattern: internal.scheduleQ, ApplyTo: queues, Definition: dead-letter-exchange: all-commands, Priority: 3}
+
+---
 
 ## Services Setup
-0. ```git clone git@github.com:DaHarris/shapeshift-exchange-management-api.git```
-0. ```npm install```
-0. ```npm run seedDB```
-
-0. ```git clone git@github.com:DaHarris/shapeshift-exchange-ranking-cqrs.git```
-0. ```npm install```
-
-0. ```git clone git@github.com:DaHarris/shapeshift-historical-pricing-api.git```
-0. ```npm install```
-
-0. ``` Must start each service with: npm run start```
+1. ```git clone git@github.com:DaHarris/shapeshift-exchange-management-api.git```
+2. ```npm install```
+3. ```npm run seedDB```
+4. ```git clone git@github.com:DaHarris/shapeshift-exchange-ranking-cqrs.git```
+5. ```npm install```
+6. ```git clone git@github.com:DaHarris/shapeshift-historical-pricing-api.git```
+7. ```npm install```
 
 ### !Important!
 `You must start each service with: npm run start (they share a common config library linked by NODE_ENV vars accessed in the start script)`
 
+---
+
 ## FrontEnd Web App Setup
-0. ```git@github.com:DaHarris/shapeshift-app.git```
-0. ```npm install```
-0. ```npm start```
-0. ```Visit localhost:9000```
+1. ```git@github.com:DaHarris/shapeshift-app.git```
+2. ```npm install```
+3. ```npm start```
+4. Visit localhost:9000
