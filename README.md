@@ -29,6 +29,7 @@ I used a template to get React/Redux with Webpack running quickly and then simpl
 5. ```npm install```
 6. ```git clone git@github.com:DaHarris/shapeshift-historical-pricing-api.git```
 7. ```npm install```
+8. ```each service: npm run start```
 
 # !IMPORTANT!
 You must start each service with: `npm run start` (they share a common config library linked by NODE_ENV vars accessed in the start script)
