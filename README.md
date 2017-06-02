@@ -39,3 +39,9 @@ You must start each service with: `npm run start` (they share a common config li
 2. ```npm install```
 3. ```npm run start```
 4. Visit localhost:9000
+
+# Extra Information
+I understand that one-off code challenges will not be completed using components such as RabbitMQ but I wanted to demonstrate my drive for architecting scalable, fault tolerant applications. I am available for setup/demo of the application in person, over phone, or over screenhero if needed. If the setup is too in depth for the test I can also setup the dependencies on AWS or in a Docker compose script if given a days time.
+
+email: dharrisdnv@gmail.com
+phone: 9702107931
