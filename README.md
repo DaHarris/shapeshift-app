@@ -6,7 +6,7 @@ each exchange. It does this by publishing a RabbitMQ command message to itself o
 
 One of the services that subscribes to this message is the [shapeshift-exchange-ranking-cqrs](https://github.com/DaHarris/shapeshift-exchange-ranking-cqrs) service. This service acts as a CQRS datastore that massages the exchangeUpdated event messages to store the exchange with the best rate for each cryptocurrency.
 
-`Disclaimer #1: This is a somewhat contrived example of SOA requirements, such a small app would never need a CQRS store or distinct service boundaries of any kind. That being said, it is a read-only store that separates the need for server based calculations in the [shapeshift-exchange-management-api](https://github.com/DaHarris/shapeshift-exchange-management-api) when requesting lowest rates. This could lead to easy extensibility in the form of say, emails when a price reaches a low point at any of the exchanges.`
+`Disclaimer #1: This is a somewhat contrived example of SOA requirements, such a small app would never need a CQRS store or distinct service boundaries of any kind. That being said, it is a read-only store that separates the need for server based calculations in the ` [shapeshift-exchange-management-api](https://github.com/DaHarris/shapeshift-exchange-management-api) `when requesting lowest rates. This could lead to easy extensibility in the form of say, emails when a price reaches a low point at any of the exchanges.`
 
 The other service that subscribes to the exchangeUpdated message is the [shapeshift-historical-pricing-api](https://github.com/DaHarris/shapeshift-historical-pricing-api) service. This service acts as a datastore for all historical data separate from storing current exchange pricing.
 
