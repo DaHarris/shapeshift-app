@@ -36,5 +36,5 @@ You must start each service with: `npm run start` (they share a common config li
 ## FrontEnd Web App Setup
 1. ```git@github.com:DaHarris/shapeshift-app.git```
 2. ```npm install```
-3. ```npm start```
+3. ```npm run start```
 4. Visit localhost:9000
